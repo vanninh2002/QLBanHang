@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QLBanHang
 {
-    public partial class AccountProfile : Form
+    public partial class fAdmin : Form
     {
-        public AccountProfile()
+        public fAdmin()
         {
             InitializeComponent();
-        }
-
-        private void btnExti_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

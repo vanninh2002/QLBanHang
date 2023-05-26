@@ -44,7 +44,7 @@
             this.txbReEnterPass = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnExti = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -193,28 +193,32 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(300, 452);
+            this.btnUpdate.Location = new System.Drawing.Point(338, 452);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(88, 51);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Cập Nhật";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // btnExit
+            // btnExti
             // 
-            this.btnExit.Location = new System.Drawing.Point(443, 452);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(88, 51);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.Text = "Cập Nhật";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExti.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExti.Location = new System.Drawing.Point(488, 452);
+            this.btnExti.Name = "btnExti";
+            this.btnExti.Size = new System.Drawing.Size(88, 51);
+            this.btnExti.TabIndex = 6;
+            this.btnExti.Text = "Cập Nhật";
+            this.btnExti.UseVisualStyleBackColor = true;
+            this.btnExti.Click += new System.EventHandler(this.btnExti_Click);
             // 
             // AccountProfile
             // 
+            this.AcceptButton = this.btnUpdate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 525);
-            this.Controls.Add(this.btnExit);
+            this.CancelButton = this.btnExti;
+            this.ClientSize = new System.Drawing.Size(642, 519);
+            this.Controls.Add(this.btnExti);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -222,6 +226,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "AccountProfile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông Tin Cá Nhân";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -255,6 +260,6 @@
         private System.Windows.Forms.TextBox txbReEnterPass;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnExti;
     }
 }

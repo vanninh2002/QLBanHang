@@ -36,5 +36,11 @@ namespace QLBanHang
         {
             this.Close();
         }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccountProfile a = new AccountProfile();
+            a.ShowDialog();
+        }
     }
 }

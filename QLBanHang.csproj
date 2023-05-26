@@ -52,6 +52,12 @@
     <Compile Include="AccountProfile.Designer.cs">
       <DependentUpon>AccountProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAdmin.Designer.cs">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <EmbeddedResource Include="AccountProfile.resx">
       <DependentUpon>AccountProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAdmin.resx">
+      <DependentUpon>fAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

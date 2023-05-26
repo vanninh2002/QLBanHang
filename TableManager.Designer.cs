@@ -87,6 +87,7 @@
             this.thôngTinCáNhânToolStripMenuItem.Name = "thôngTinCáNhânToolStripMenuItem";
             this.thôngTinCáNhânToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thôngTinCáNhânToolStripMenuItem.Text = "Thông Tin Cá Nhân";
+            this.thôngTinCáNhânToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCáNhânToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
